@@ -1,0 +1,141 @@
+<div class="login-area">
+    <div class="container">
+
+        <!-- DRIVING LICENCE -->
+        <div class="" *ngIf="option == 1">
+            <form>
+                <div class="login-form-head" style="height: 30px; margin: auto;">
+                    <h4>Enter The Driving Licence Details </h4>
+                </div>
+                <div class="login-form-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="name" class="col-form-label">Name</label>
+                                <input class="form-control" type="text" placeholder="Enter Name" id="name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="key" class="col-form-label">Public Key</label>
+                                <input class="form-control" type="email" placeholder="Enter User Public Key" id="key">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="idNo" class="col-form-label">ID Number</label>
+                                <input class="form-control" type="tel" placeholder="Enter ID Number" id="idNo">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="dob" class="col-form-label">Date Of Birth</label>
+                                <input class="form-control" type="email" placeholder="Enter Date Of Birth" id="dob">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="address" class="col-form-label">Address</label>
+                                <input class="form-control" type="email" placeholder="Enter Address" id="address">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="blood" class="col-form-label">Blood Group</label>
+                                <input class="form-control" type="text" placeholder="Enter Blood Group" id="blood">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="validFrom" class="col-form-label">Valid From</label>
+                                <input class="form-control" type="date" placeholder="Enter Valid From Date" id="validFrom">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="validTo" class="col-form-label">Valid To</label>
+                                <input class="form-control" type="date" placeholder="Enter Valid To Date" id="validTo">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="photo" class="col-form-label">Photo</label>
+                                <input class="form-control" type="file" id="photo">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="submit-btn-area">
+                        <button id="form_submit" routerLink='/home' type="submit">Submit <i class="ti-arrow-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+         <!-- PAN CARD -->
+         <div class="" *ngIf="option == 2">
+            <form>
+                <div class="login-form-head" style="height: 30px; margin: auto;">
+                    <h4>Enter The PAN Card Details </h4>
+                </div>
+                <div class="login-form-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="name" class="col-form-label">Name</label>
+                                <input class="form-control" type="text" placeholder="Enter Name" id="name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="key" class="col-form-label">Public Key</label>
+                                <input class="form-control" type="text" placeholder="Enter User Public Key" id="key">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="idNo" class="col-form-label">ID Number</label>
+                                <input class="form-control" type="text" placeholder="Enter ID Number" id="idNo">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="dob" class="col-form-label">Date Of Birth</label>
+                                <input class="form-control" type="date" placeholder="Enter Date Of Birth" id="dob">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="address" class="col-form-label">Address</label>
+                                <input class="form-control" type="text" placeholder="Enter Address" id="address">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="doi" class="col-form-label">Date of Issue</label>
+                                <input class="form-control" type="date" placeholder="Enter Date of Issue" id="doi">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="photo" class="col-form-label">Photo</label>
+                                <input class="form-control" type="file" id="photo">
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="submit-btn-area ">
+                        <button id="form_submit" routerLink='/home' type="submit">Submit <i class="ti-arrow-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <!-- bootstrap 4 js -->
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/metisMenu.min.js"></script>
+  
+  <!-- others plugins -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/scripts.js"></script>
